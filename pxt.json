@@ -10,9 +10,7 @@
         "README.md",
         "main.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "public": true,
     "preferredEditor": "tsprj"
 }
