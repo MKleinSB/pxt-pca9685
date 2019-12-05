@@ -39,7 +39,15 @@ namespace Servo {
         //% block="Servo 10"
         Servo10 = 10,
         //% block="Servo 11"
-        Servo11 = 11
+        Servo11 = 11,
+        //% block="Servo 12"
+        Servo12 = 12,
+        //% block="Servo 13"
+        Servo13 = 13,
+        //% block="Servo 14"
+        Servo14 = 14,
+        //% block="Servo 15"
+        Servo15 = 15
     }
 
     function i2cwrite(addr: number, reg: number, value: number) {
