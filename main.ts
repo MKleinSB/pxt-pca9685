@@ -1,8 +1,8 @@
-
 /**
  * Original code from
  * https://github.com/waveshare/pxt-Servo
  * MIT License
+ * additional Code by Michael Klein 5.11.19
  */
 
 //% weight=5 color=#0fbc11 icon="\uf1b6"
@@ -14,7 +14,7 @@ namespace Servo {
 
     let initialized = false
 
-    // List of servos for the servo block to use. These represent register offsets in the PCA9865 driver IC.
+    // List of servos for the servo block to use.
     export enum Servos {
         //% block="Servo 0"
         Servo0 = 0,
