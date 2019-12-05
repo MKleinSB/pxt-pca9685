@@ -103,14 +103,14 @@ namespace Servo {
     }
 
 	/**
-	 * Servo Execute
+	 * Servo Winkel setzen
 	 * @param degree [0-180] degree of servo; eg: 90, 0, 180
 	*/
     //% blockId=Servo block="setze Winkel von |%channel| auf |%degree=protractorPicker| °"
     //% weight=85
     //% channel.fieldEditor="gridpicker"
     //% channel.fieldOptions.width=220
-    //% channel.fieldOptions.columns=3
+    //% channel.fieldOptions.columns=4
     //% degree.min=0 degree.max=180
     export function Servo(channel: Servos, degree: number): void {
         if (!initialized) {
@@ -123,7 +123,7 @@ namespace Servo {
     }
 
 	/**
-	 * Servo Execute
+	 * Servo Puls setzen
 	 * @param pulse [500-2500] pulse of servo; eg: 1500, 500, 2500
 	*/
     //% blockId=ServoPulse block="setze Puls von |%channel| auf |%pulse| μs"
@@ -131,7 +131,7 @@ namespace Servo {
     //% pulse.min=500 pulse.max=2500
     //% channel.fieldEditor="gridpicker"
     //% channel.fieldOptions.width=220
-    //% channel.fieldOptions.columns=3
+    //% channel.fieldOptions.columns=4
     export function ServoPulse(channel: Servos, pulse: number): void {
         if (!initialized) {
             initPCA9685();
