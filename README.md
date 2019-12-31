@@ -1,9 +1,11 @@
 # pxt-pca9685
 
+Extension for the PCA9685 16x Servodriver boards
 
 | ![PCA9685 Board](https://github.com/MKleinSB/pxt-pca9685/blob/master/2.png "PCA9685 Board") | ![PCA9685 Board](https://github.com/MKleinSB/pxt-pca9685/blob/master/1.png "PCA9685 Board") |
-| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 |                                            _PCA9685 Board 2€ from ebay_                                            |                                   _PCA9685 Board Grove Version from seeed_                                   |
+|                                            _I2C Adress 0x40 (Standard)_                                            |                                   _I2C Adress 0x7F_                                   |
 
 ## Diese Erweiterung verwenden
 
@@ -24,13 +26,12 @@ Um dieses Repository in MakeCode zu bearbeiten.
 
 ## Blockvorschau
 
-Dieser Abschnitt zeigt den Blockcode des letzten Commits im Master.
+
 
 ![Eine gerenderte Ansicht der Blöcke](https://github.com/mkleinsb/pxt-pca9685/raw/master/.makecode/blocks.png)
 
 ## Unterstützte Boards
 
 * for PXT/calliopemini
-* for PXT/calliopemini
-(Die obigen Metadaten werden für die Paketsuche benötigt.)
+* for PXT/microbit
 
