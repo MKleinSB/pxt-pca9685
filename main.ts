@@ -3,6 +3,9 @@
  * https://github.com/waveshare/pxt-Servo
  * MIT License
  * additional Code by Michael Klein 31.12.19
+ * 
+ * Default I2C Adress is 0x40
+ * 
  */
 
 //% weight=5 color=#0fbc11 icon="\uf1b6"
