@@ -2,7 +2,7 @@
  * Original code from
  * https://github.com/waveshare/pxt-Servo
  * MIT License
- * additional Code by Michael Klein 5.11.19
+ * additional Code by Michael Klein 31.12.19
  */
 
 //% weight=5 color=#0fbc11 icon="\uf1b6"
@@ -139,5 +139,10 @@ namespace Servo {
         // 50hz: 20,000 us
         let value = pulse * 4096 / 20000;
         setPwm(channel, 0, value);
+    }
+    
+    //% blockId=SetI2cAdress block="setze I2C Adresse von 0x40 (default) auf 0x7F (Grove)"
+    export function SetI2cAdress(): void {
+        const PCA9685_ADDRESS = 0x7F
     }
 } 
