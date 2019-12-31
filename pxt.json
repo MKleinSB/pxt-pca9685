@@ -1,6 +1,6 @@
 {
     "name": "pxt-pca9685",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Easy to use ServoDriver for the pca9685",
     "dependencies": {
         "core": "*",
