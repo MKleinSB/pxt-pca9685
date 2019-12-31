@@ -10,7 +10,7 @@
 
 //% weight=5 color=#0fbc11 icon="\uf1b6"
 namespace Servo {
-    const PCA9685_ADDRESS = 0x40
+    let PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const PRESCALE = 0xFE
     const LED0_ON_L = 0x06
@@ -37,7 +37,7 @@ namespace Servo {
         Servo7 = 7,
         //% block="Servo 8"
         Servo8 = 8,
-         //% block="Servo 9"
+        //% block="Servo 9"
         Servo9 = 9,
         //% block="Servo 10"
         Servo10 = 10,
@@ -143,9 +143,9 @@ namespace Servo {
         let value = pulse * 4096 / 20000;
         setPwm(channel, 0, value);
     }
-    
+
     //% blockId=SetI2cAdress block="setze I2C Adresse von 0x40 (default) auf 0x7F (Grove)"
     export function SetI2cAdress(): void {
-        const PCA9685_ADDRESS = 0x7F
+         PCA9685_ADDRESS = 0x7F
     }
 } 
