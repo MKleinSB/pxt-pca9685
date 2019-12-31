@@ -1,6 +1,9 @@
-# pxt-pca9685 ![Build Status Abzeichen](https://github.com/mkleinsb/pxt-pca9685/workflows/MakeCode/badge.svg)
+# pxt-pca9685
 
 
+| ![PCA9685 Board](https://github.com/MKleinSB/pxt-pca9685/blob/master/2.png "PCA9685 Board") | ![PCA9685 Board](https://github.com/MKleinSB/pxt-pca9685/blob/master/1.png "PCA9685 Board") |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+|                                            _PCA9685 Board 2€ from ebay_                                            |                                   _PCA9685 Board Grove Version from seeed_                                   |
 
 ## Diese Erweiterung verwenden
 
