@@ -29,6 +29,6 @@ Bei der **Groveversion** mit der Adresse 0x7F muss beim Start die I2C-Adresse ei
 
 ## Unterstützte Boards
 
-* for PXT/calliopemini
+* for PXT/calliope
 * for PXT/microbit
 
