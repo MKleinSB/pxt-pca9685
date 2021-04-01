@@ -12,5 +12,8 @@
     ],
     "testFiles": [],
     "public": true,
+    "supportedTargets": [
+        "calliopemini"
+    ],
     "preferredEditor": "tsprj"
 }

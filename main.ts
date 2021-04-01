@@ -2,13 +2,13 @@
  * Original code from
  * https://github.com/waveshare/pxt-Servo
  * MIT License
- * additional Code by Michael Klein 31.12.19
+ * additional Code by Michael Klein 31.12.19/1.4.21
  * 
  * Default I2C Adress is 0x40
  * 
  */
 
-//% weight=5 color=#0fbc11 icon="\uf1b6"
+//% weight=5 color=#0fbc11 icon="\uf1b6" block="PCA9685 Servo"
 namespace Servo {
     let PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
@@ -116,6 +116,24 @@ namespace Servo {
     //% channel.fieldOptions.columns=4
     //% degree.min=0 degree.max=180
     export function Servo(channel: Servos, degree: number): void {
+        if (!initialized) {
+            initPCA9685();
+        }
+        // 50hz: 20,000 us
+        let v_us = (degree * 1800 / 180 + 600); // 0.6 ~ 2.4
+        let value = v_us * 4096 / 20000;
+        setPwm(channel, 0, value);
+    }
+
+	/**
+	 * Servo Winkel setzen
+	 * @param degree [0-180] degree of servo; eg: 90, 0, 180
+	*/
+    //% blockId=Servonum block="setze Winkel von Servo |%channel| auf |%degree=protractorPicker| °"
+    //% weight=85
+    //% channel.min=0 channel.max=15
+    //% degree.min=0 degree.max=180
+    export function Servonum(channel: number, degree: number): void {
         if (!initialized) {
             initPCA9685();
         }
